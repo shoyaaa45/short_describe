@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      contribute: 投稿
+    attributes:
+      contribute:
+        title: タイトル
+        entry_time: 日付
+        content: 内容
