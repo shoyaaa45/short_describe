@@ -88,6 +88,7 @@ GEM
     omniauth-twitter (1.0.1)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
+    pg (0.18.1)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     pry (0.10.1)
@@ -112,6 +113,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.7)
       sprockets-rails (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.3)
     railties (4.1.7)
       actionpack (= 4.1.7)
       activesupport (= 4.1.7)
@@ -174,9 +180,11 @@ DEPENDENCIES
   kaminari-bootstrap
   omniauth
   omniauth-twitter
+  pg
   pry-byebug
   pry-rails
   rails (= 4.1.7)
+  rails_12factor
   ransack
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
