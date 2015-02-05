@@ -1,3 +1,2 @@
 # ShortDescribe
-Rails Practice
-ruby railsプロジェクト管理の練習
+Railsプロジェクト管理の練習
