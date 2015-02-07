@@ -11,6 +11,7 @@ gem 'rails', '4.1.7'
 group :development do
   gem 'sqlite3'
 end
+#heroku環境でのDBとherokuでRailsを動かすためのGem
 group :production do
   gem 'pg'
   gem 'rails_12factor'
