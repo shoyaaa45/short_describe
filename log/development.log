@@ -49306,3 +49306,801 @@ ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
   Rendered /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.8ms)
   Rendered /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.3ms)
   Rendered /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:16:52 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:16:52.597507')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:16:52.597507')[0m
+  Rendered welcome/index.html.erb within layouts/application (143.6ms)
+Completed 200 OK in 781ms (Views: 739.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:16:53 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:17:20 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:17:20.617520')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:17:20.617520')[0m
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:18:19.639000')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:18:19.639000')[0m
+  Rendered welcome/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:18:19 +0900
+
+
+Started GET "/contributes/new" for 127.0.0.1 at 2015-02-07 17:18:24 +0900
+Processing by ContributesController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered contributes/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 247ms (Views: 162.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-02-07 17:19:22 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:19:22 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 85ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-07 17:19:22 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-07 17:19:25 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-07 17:19:27 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 118ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-07 17:22:48 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:22:49 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 117ms (Views: 114.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-07 17:22:50 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 100ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-07 17:23:24 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-07 17:23:26 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-07 17:23:29 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-07 17:23:30 +0900
+
+
+Started GET "/auth/twitter/callback?oauth_token=GcnKvHFaII1lAKiiTLqnqQBZlhkUGNI9&oauth_verifier=41xdvpT7QzAjb03HeWO7kleHxLi0KXNM" for 127.0.0.1 at 2015-02-07 17:23:35 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"GcnKvHFaII1lAKiiTLqnqQBZlhkUGNI9", "oauth_verifier"=>"41xdvpT7QzAjb03HeWO7kleHxLi0KXNM", "provider"=>"twitter"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."provider" = 'twitter' AND "users"."uid" = '158715172' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:23:37.282334')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:23:37.282334')[0m
+  Rendered welcome/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 103ms (Views: 101.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:23:37 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:26:44.401920')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:26:44.401920')[0m
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 123ms (Views: 119.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:44 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:26:45.732884')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:26:45.732884')[0m
+  Rendered welcome/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 113ms (Views: 110.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:26:45 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:28:30 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:28:30.837571')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:28:30.837571')[0m
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 122ms (Views: 119.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:28:31 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:29:45.095218')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:29:45.095218')[0m
+  Rendered welcome/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 129ms (Views: 125.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:45 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:29:46 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:29:46.914452')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:29:46.914452')[0m
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 120ms (Views: 117.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:29:47 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:30:32.014721')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:30:32.014721')[0m
+  Rendered welcome/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 118ms (Views: 115.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:32 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.4ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:30:51.688689')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-07 08:30:51.688689')[0m
+  Rendered welcome/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 123ms (Views: 118.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-07 17:30:51 +0900
+  [1m[36mContribute Load (0.3ms)[0m  [1mSELECT  "contributes".* FROM "contributes"  WHERE "contributes"."id" = ? LIMIT 1[0m  [["id", 1]]
