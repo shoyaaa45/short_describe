@@ -9,7 +9,6 @@ class Contribute < ActiveRecord::Base
   def created_by?(param_user)
     return false unless user
     user_id == param_user.id
-    #binding.pry
   end
 
   private

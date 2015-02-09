@@ -1,0 +1,1530 @@
+  [1m[36mContribute Load (0.2ms)[0m  [1mSELECT  "contributes".* FROM "contributes"  WHERE "contributes"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq%281i%29%5D=&q%5Bentry_time_lteq%282i%29%5D=&q%5Bentry_time_lteq%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:02:43 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq(1i)"=>"", "entry_time_lteq(2i)"=>"", "entry_time_lteq(3i)"=>""}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" >= '2015-01-01 15:00:00.000000')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" >= '2015-01-01 15:00:00.000000')[0m
+  Rendered welcome/index.html.erb within layouts/application (141.3ms)
+Completed 200 OK in 719ms (Views: 686.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:02:44 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq_end_of_day%281i%29%5D=2015&q%5Bentry_time_lteq_end_of_day%282i%29%5D=2&q%5Bentry_time_lteq_end_of_day%283i%29%5D=1&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:03:14 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq_end_of_day(1i)"=>"2015", "entry_time_lteq_end_of_day(2i)"=>"2", "entry_time_lteq_end_of_day(3i)"=>"1"}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-02-01 14:59:59.999999'))  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-02-01 14:59:59.999999'))[0m
+  Rendered welcome/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 106ms (Views: 100.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:15 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq_end_of_day%281i%29%5D=2015&q%5Bentry_time_lteq_end_of_day%282i%29%5D=2&q%5Bentry_time_lteq_end_of_day%283i%29%5D=1&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq_end_of_day(1i)"=>"2015", "entry_time_lteq_end_of_day(2i)"=>"2", "entry_time_lteq_end_of_day(3i)"=>"1"}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.3ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-02-01 14:59:59.999999'))  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.3ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-02-01 14:59:59.999999'))[0m
+  Rendered welcome/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 111ms (Views: 108.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:16 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:17 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq_end_of_day%281i%29%5D=2015&q%5Bentry_time_lteq_end_of_day%282i%29%5D=1&q%5Bentry_time_lteq_end_of_day%283i%29%5D=31&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq_end_of_day(1i)"=>"2015", "entry_time_lteq_end_of_day(2i)"=>"1", "entry_time_lteq_end_of_day(3i)"=>"31"}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.2ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))[0m
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:03:35 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq_end_of_day%281i%29%5D=2015&q%5Bentry_time_lteq_end_of_day%282i%29%5D=1&q%5Bentry_time_lteq_end_of_day%283i%29%5D=31&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:06:05 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq_end_of_day(1i)"=>"2015", "entry_time_lteq_end_of_day(2i)"=>"1", "entry_time_lteq_end_of_day(3i)"=>"31"}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.4ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))[0m
+  Rendered welcome/index.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 50464ms (Views: 509.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:06:55 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq_end_of_day%281i%29%5D=2015&q%5Bentry_time_lteq_end_of_day%282i%29%5D=1&q%5Bentry_time_lteq_end_of_day%283i%29%5D=31&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:08:24 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq_end_of_day(1i)"=>"2015", "entry_time_lteq_end_of_day(2i)"=>"1", "entry_time_lteq_end_of_day(3i)"=>"31"}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.5ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE (("contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))[0m
+  Rendered welcome/index.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 96657ms (Views: 523.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:02 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:02 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:02 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:02 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:02 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=2015&q%5Bentry_time_gteq%282i%29%5D=1&q%5Bentry_time_gteq%283i%29%5D=2&q%5Bentry_time_lteq_end_of_day%281i%29%5D=2015&q%5Bentry_time_lteq_end_of_day%282i%29%5D=1&q%5Bentry_time_lteq_end_of_day%283i%29%5D=31&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:10:05 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"2015", "entry_time_gteq(2i)"=>"1", "entry_time_gteq(3i)"=>"2", "entry_time_lteq_end_of_day(1i)"=>"2015", "entry_time_lteq_end_of_day(2i)"=>"1", "entry_time_lteq_end_of_day(3i)"=>"31"}, "commit"=>"検索"}
+  [1m[35mContribute Load (1.4ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE (("contributes"."user_id" = 1 AND "contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE (("contributes"."user_id" = 1 AND "contributes"."entry_time" >= '2015-01-01 15:00:00.000000' AND "contributes"."entry_time" <= '2015-01-31 14:59:59.999999'))[0m
+  Rendered welcome/index.html.erb within layouts/application (79.4ms)
+Completed 200 OK in 17216ms (Views: 659.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:10:23 +0900
+
+
+Started GET "/logout" for 127.0.0.1 at 2015-02-10 00:10:43 +0900
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 00:10:43 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 622ms (Views: 594.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-10 00:10:44 +0900
+
+
+Started GET "/contributes/new" for 127.0.0.1 at 2015-02-10 00:10:45 +0900
+Processing by ContributesController#new as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 00:10:45 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 607ms (Views: 590.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-10 00:10:46 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-10 00:10:49 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-10 00:10:49 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 00:14:33 +0900
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 560ms (Views: 546.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/assets/cafe_latte01.jpg" for 127.0.0.1 at 2015-02-10 00:14:34 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-10 00:14:37 +0900
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-02-10 00:14:38 +0900
+
+
+Started GET "/auth/twitter/callback?oauth_token=hwfkMEgRITsBWMexHUZ21gd8xBVbTwEJ&oauth_verifier=azPmke0FxZEAfSZVmwV8aQEFWQbFEWX0" for 127.0.0.1 at 2015-02-10 00:14:51 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"hwfkMEgRITsBWMexHUZ21gd8xBVbTwEJ", "oauth_verifier"=>"azPmke0FxZEAfSZVmwV8aQEFWQbFEWX0", "provider"=>"twitter"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'twitter' AND "users"."uid" = '3014485963' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("created_at", "image_url", "nickname", "provider", "uid", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2015-02-09 15:14:52.737060"], ["image_url", "http://pbs.twimg.com/profile_images/564804438548688897/BD_s2jJU_normal.jpeg"], ["nickname", "hossho45"], ["provider", "twitter"], ["uid", "3014485963"], ["updated_at", "2015-02-09 15:14:52.737060"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 125ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-10 00:14:52 +0900
+Processing by WelcomeController#index as HTML
+  [1m[35mContribute Load (0.6ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-09 15:14:52.787005')  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE ("contributes"."entry_time" <= '2015-02-09 15:14:52.787005')[0m
+  Rendered welcome/index.html.erb within layouts/application (79.9ms)
+Completed 200 OK in 734ms (Views: 715.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:14:53 +0900
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mContribute Load (0.2ms)[0m  SELECT "contributes".* FROM "contributes"
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:16:44 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.6ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2[0m
+  Rendered welcome/index.html.erb within layouts/application (54.9ms)
+Completed 200 OK in 594ms (Views: 568.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:45 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:16:48 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.6ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2[0m
+  Rendered welcome/index.html.erb within layouts/application (59.3ms)
+Completed 200 OK in 729ms (Views: 712.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:16:49 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:18:07 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.4ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2[0m
+  Rendered welcome/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 576ms (Views: 550.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:08 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:18:40 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.5ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2[0m
+  Rendered welcome/index.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 596ms (Views: 580.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:18:41 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:20:31 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[35mContribute Load (0.4ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2[0m
+  Rendered welcome/index.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 585ms (Views: 569.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:20:31 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:20:31 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:20:32 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:22:44 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  Rendered welcome/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 30ms
+
+SyntaxError - syntax error, unexpected tCONSTANT, expecting keyword_then or ';' or '\n'
+'.freeze;   if @contributes.length > 0 Then 
+                                           ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;   else 
+                ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:60: syntax error, unexpected keyword_ensure, expecting end-of-input:
+  app/views/welcome/index.html.erb:28:in `'
+  actionview (4.1.7) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.7) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.7) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.7) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/3f967743ac1b4a5c/variables" for 127.0.0.1 at 2015-02-10 00:22:44 +0900
+  [1m[35mContribute Load (0.5ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:22:48 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  Rendered welcome/index.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 22ms
+
+SyntaxError - syntax error, unexpected tCONSTANT, expecting keyword_then or ';' or '\n'
+'.freeze;   if @contributes.length > 0 Then 
+                                           ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;   else 
+                ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:60: syntax error, unexpected keyword_ensure, expecting end-of-input:
+  app/views/welcome/index.html.erb:28:in `'
+  actionview (4.1.7) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.7) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.7) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.7) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/347e62b3e59a8d42/variables" for 127.0.0.1 at 2015-02-10 00:22:48 +0900
+  [1m[36mContribute Load (0.7ms)[0m  [1mSELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0[0m
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:27:16 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  Rendered welcome/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 35ms
+
+SyntaxError - syntax error, unexpected tCONSTANT, expecting keyword_then or ';' or '\n'
+'.freeze;   if @contributes.empty? == false Then 
+                                                ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;   else 
+                ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:60: syntax error, unexpected keyword_ensure, expecting end-of-input:
+  app/views/welcome/index.html.erb:28:in `'
+  actionview (4.1.7) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.7) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.7) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.7) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/4b5cb32caa9fccd0/variables" for 127.0.0.1 at 2015-02-10 00:27:17 +0900
+  [1m[35mContribute Load (1.0ms)[0m  SELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:27:18 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  Rendered welcome/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 25ms
+
+SyntaxError - syntax error, unexpected tCONSTANT, expecting keyword_then or ';' or '\n'
+'.freeze;   if @contributes.empty? == false Then 
+                                                ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:30: syntax error, unexpected keyword_else, expecting keyword_end
+'.freeze;   else 
+                ^
+/Users/h-shoya/short_describe/app/views/welcome/index.html.erb:60: syntax error, unexpected keyword_ensure, expecting end-of-input:
+  app/views/welcome/index.html.erb:28:in `'
+  actionview (4.1.7) lib/action_view/template.rb:297:in `compile'
+  actionview (4.1.7) lib/action_view/template.rb:245:in `block (2 levels) in compile!'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:244:in `block in compile!'
+  actionview (4.1.7) lib/action_view/template.rb:232:in `compile!'
+  actionview (4.1.7) lib/action_view/template.rb:144:in `block in render'
+  activesupport (4.1.7) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.7) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.7) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.7) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.7) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.7) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.7) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.7) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.7) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.7) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.7) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.7) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.7) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.7) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.7) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.7) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.7) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.7) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.7) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.7) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.7) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.7) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/h-shoya/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/896e59162ebdd1c6/variables" for 127.0.0.1 at 2015-02-10 00:27:18 +0900
+  [1m[36mContribute Load (0.8ms)[0m  [1mSELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0[0m
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:29:00 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(DISTINCT count_column) FROM (SELECT  DISTINCT "contributes"."id" AS count_column FROM "contributes"  WHERE "contributes"."user_id" = 2 LIMIT 10 OFFSET 0) subquery_for_count
+  [1m[36mContribute Load (0.5ms)[0m  [1mSELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2
+  Rendered welcome/index.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 629ms (Views: 603.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:01 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:29:57 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[36mContribute Load (0.6ms)[0m  [1mSELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2
+  Rendered welcome/index.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 606ms (Views: 591.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:29:58 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:29:59 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[36mContribute Load (0.5ms)[0m  [1mSELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2
+  Rendered welcome/index.html.erb within layouts/application (62.4ms)
+Completed 200 OK in 741ms (Views: 724.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:00 +0900
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Btitle_or_content_cont%5D=&q%5Bentry_time_gteq%281i%29%5D=&q%5Bentry_time_gteq%282i%29%5D=&q%5Bentry_time_gteq%283i%29%5D=&q%5Bentry_time_lteq_end_of_day%281i%29%5D=&q%5Bentry_time_lteq_end_of_day%282i%29%5D=&q%5Bentry_time_lteq_end_of_day%283i%29%5D=&commit=%E6%A4%9C%E7%B4%A2" for 127.0.0.1 at 2015-02-10 00:30:21 +0900
+Processing by WelcomeController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"title_or_content_cont"=>"", "entry_time_gteq(1i)"=>"", "entry_time_gteq(2i)"=>"", "entry_time_gteq(3i)"=>"", "entry_time_lteq_end_of_day(1i)"=>"", "entry_time_lteq_end_of_day(2i)"=>"", "entry_time_lteq_end_of_day(3i)"=>""}, "commit"=>"検索"}
+  [1m[36mContribute Load (0.7ms)[0m  [1mSELECT  DISTINCT "contributes".* FROM "contributes"  WHERE "contributes"."user_id" = 2  ORDER BY "contributes"."entry_time" DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "contributes"."id") FROM "contributes"  WHERE "contributes"."user_id" = 2
+  Rendered welcome/index.html.erb within layouts/application (68.4ms)
+Completed 200 OK in 740ms (Views: 721.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/contributes.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/sends.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/contributes.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/sends.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2015-02-10 00:30:22 +0900

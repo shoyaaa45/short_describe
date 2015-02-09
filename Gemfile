@@ -64,3 +64,5 @@ gem 'kaminari', '~> 0.15.1'
 gem 'kaminari-bootstrap'
 #検索機能
 gem 'ransack'
+#画像添付
+gem 'carrierwave'
