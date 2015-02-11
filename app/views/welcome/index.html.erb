@@ -5,7 +5,7 @@
   <%= image_tag 'cafe_latte01.jpg' , width: '600', height: '400', alt: 'カフェラテ' ,class: "img-responsive" %>
 </div>
 <h3>
-  テキトーに、その時ふと思ったことを綴ろう。<br>
+  テキトーに・・・思ったことを綴る。<br>
 </h3>
 <% else %>
 <div class = "col-md-3">
@@ -17,15 +17,19 @@
     </div>
     <div class = "form-group">
       <%= f.label :entry_time, '入力日' %><br>
-      <%= f.date_select :entry_time_gteq, start_year: now.year, end_year: now.year + 1, prompt: true %>
+      <%= f.date_select :entry_time_gteq, start_year: now.year, end_year: now.year + 1, date_separator: '/', prompt: true %>
       <br>~
-      <%= f.date_select :entry_time_lteq, start_year: now.year, end_year: now.year + 1, prompt: true %>
+      <%= f.date_select :entry_time_lteq_end_of_day, start_year: now.year, end_year: now.year + 1, default: now, date_separator: '/',prompt: true %>
     </div>
     <%= f.submit '検索', class: 'btn btn-info' %>
   <% end %>
 </div>
-<div class = "col-md-6">
-  <h1>日常のあれこれ</h1>
+<div class = "col-md-9">
+  <% if @contributes.length > 0 then %>
+    <h1>どんどん書いていこう</h1>
+  <% else %>
+    <h1>何か書いて！</h1>
+  <% end %>
     <div class = "panel panel-info">
     <div class = "panel-heading">
       <h4>タイムライン</h4>
