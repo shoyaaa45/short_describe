@@ -1,2 +1,2 @@
 # ShortDescribe
-Railsプロジェクト管理の練習
+日記アプリケーション
