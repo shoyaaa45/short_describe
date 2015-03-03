@@ -41,7 +41,7 @@ class ContributesController < ApplicationController
 
   def contribute_params
     params.require(:contribute).permit(
-      :title, :entry_time, :content
+      :title, :entry_time, :contribute_image, :contribute_image_cache, :remove_contribute_image,:content
     )
   end
 

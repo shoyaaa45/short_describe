@@ -1,4 +1,5 @@
 class Contribute < ActiveRecord::Base
+  mount_uploader :contribute_image, ContributeImageUploader
   #belongs_to :owner, class_name: 'User'
   belongs_to :user
 

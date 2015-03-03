@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150130234749) do
+ActiveRecord::Schema.define(version: 20150222081414) do
 
   create_table "contributes", force: true do |t|
     t.integer  "user_id"
-    t.string   "title",      null: false
-    t.datetime "entry_time", null: false
-    t.text     "content",    null: false
+    t.string   "title",            null: false
+    t.datetime "entry_time",       null: false
+    t.text     "content",          null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "contribute_image"
   end
 
   add_index "contributes", ["user_id"], name: "index_contributes_on_user_id"

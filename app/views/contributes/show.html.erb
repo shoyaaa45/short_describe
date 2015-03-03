@@ -39,6 +39,11 @@
           <div class = "panel-body">
             <%= @contribute.content %>	  
           </div>
+          <% if @contribute.contribute_image? %>
+            <div class = "thumbnail">
+              <%= image_tag @contribute.contribute_image.url %>
+            </div>
+          <% end %>
         </div>
     </div>
     <div class = "col-md-4" >
