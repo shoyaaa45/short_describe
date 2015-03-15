@@ -66,3 +66,13 @@ gem 'kaminari-bootstrap'
 gem 'ransack'
 #画像添付
 gem 'carrierwave'
+gem 'mini_magick'
+
+#テスト用gem
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'rspec-core'
+  gem 'rspec-expectations'
+  gem 'rspec-mocks'
+  gem 'rspec-support'
+end
