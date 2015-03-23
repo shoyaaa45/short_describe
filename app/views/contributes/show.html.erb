@@ -4,22 +4,11 @@
   <div class = "col-md-9">
     <div class ="page-header">
       <h1>
-      テキトーに...  
+      こんなこともあったな~  
       </h1>
     </div>
     <div class = "row">
       <div class = "col-md-8">
-        <div class ="panel panel-info">
-          <div class = "panel-heading">
-	        ユーザー  
-          </div>
-          <div class ="panel-body">
-	          <%= link_to("https://twitter.com/#{@contribute.user.nickname}") do %>
-	            <%= image_tag @contribute.user.image_url %>
-	            <%= "@#{@contribute.user.nickname}" %>
-            <% end %>
-          </div>
-        </div>
         <div class ="panel panel-info">
           <div class ="panel-heading">
 	        タイトル 
@@ -40,6 +29,9 @@
             <%= @contribute.content %>	  
           </div>
           <% if @contribute.contribute_image? %>
+            <div class = "panel-heading">
+  	          今日の一枚
+            </div>
             <div class = "thumbnail">
               <%= image_tag @contribute.contribute_image.url %>
             </div>

@@ -26,12 +26,17 @@
             <% if logged_in? %>
               <a href = "">
                 <%#= image_tag session[:image_url] %>
-                <%= "#{session[:nick_name]}でログイン中" %>
+                <%#= "#{session[:nick_name]}でログイン中" %>
               </a>
             <% end %>
           </li>
           <li><%= link_to '新規入力', new_contribute_path %></li>
-          <% if logged_in? == false %>
+          <% if logged_in? == true %>
+            <li><%= link_to '退会', retire_user_path %></li>
+            <li>
+              <%= link_to 'ログアウト',logout_path %>
+            </li>
+          <% else %>
             <li class ="dropdown">
               <a href = "#" class = "dropdown-toggle" data-toggle ="dropdown">ログイン
                 <span class ="caret"></span>
@@ -42,14 +47,10 @@
                   <%= link_to 'Twitterでログイン','/auth/twitter' %>
                 </li>
                 <li class="divider"></li>
-                <li>
+                <li class = "disabled">
                   <%= link_to 'ログイン', '##' %>
                 </li>
               </ul>
-            </li>
-          <% else %>
-            <li>
-              <%= link_to 'ログアウト',logout_path %>
             </li>
           <% end %>
         </ul> 

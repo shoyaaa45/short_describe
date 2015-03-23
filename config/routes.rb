@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback' => 'sessions#create'
   get '/logout' => 'sessions#destroy', as: :logout
 
+  resource :user do
+    get 'retire'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

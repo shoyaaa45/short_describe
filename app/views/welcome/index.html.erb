@@ -1,14 +1,29 @@
 <% now = Time.zone.now %>
 <% if logged_in? == false  %>
-<h1>ほっと一息♨️　</h1>
+<h1>ほっと一息</h1>
 <div>
   <%= image_tag 'cafe_latte01.jpg' , width: '600', height: '400', alt: 'カフェラテ' ,class: "img-responsive" %>
 </div>
 <h3>
-  何気なく・・・思ったことを綴る。<br>
+  何気ないこと、適当なことを書いて大丈夫
 </h3>
+<h5>
+  ※ログインすれば、自分の世界で、自分しか見ない日記が書けます。
+</h5>
+
 <% else %>
 <div class = "col-md-3">
+  <div class ="panel panel-info">
+    <div class = "panel-heading">
+	    ログインユーザー  
+    </div>
+    <div class ="panel-body">
+	    <%= link_to("https://twitter.com/#{@user.nickname}") do %>
+	    <%= image_tag @user.image_url %>
+	    <%= "@#{@user.nickname}" %>
+      <% end %>
+    </div>
+  </div>
   <%= search_form_for(@q, url: root_path, class: 'well') do |f| %>
     <div class ="form-group">
       <%= f.label :title_or_content_cont, 'キーワード' %>
@@ -27,13 +42,16 @@
   <div class = "panel panel-info">
     <div class = "panel-heading">
       <h4>タイムライン</h4>
+        <div align = "right">
+          <font size = 2>最終更新：<%= @update_date.to_s[0,16] %></font>
+        </div> 
     </div>
     <div class = "list-group">
       <% @contributes.each do |contribute| %>
         <%= link_to(contribute, class: 'list-group-item') do  %>
           <div class = "list-item-heading">
             <h4><%= contribute.title %></h4>
-            <h6><%= contribute.entry_time.to_s[0,16] %></h6>
+            <h6>記入日：<%= contribute.entry_time.to_s[0,16] %></h6>
           </div>
           <p class = "list-group-item-text">
           <%= contribute.content %>

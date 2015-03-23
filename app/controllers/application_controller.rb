@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   def authenticate
     return if logged_in?
-    redirect_to root_path,alert: 'ログインして下さい'
+    redirect_to root_path, alert: 'ログインして下さい'
   end
 
   def routing_error
